@@ -40,7 +40,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Image.asset(AssetsDate.splashImage),
+        Image.asset(AssetsDate.logoImage),
         SlidingText(slidingAnimation: slidingAnimation),
       ],
     );

@@ -1,3 +1,3 @@
 class AssetsDate {
-  static const String  splashImage = 'assets/image/Logo.png';
+  static const String  logoImage = 'assets/image/Logo.png';
 }
