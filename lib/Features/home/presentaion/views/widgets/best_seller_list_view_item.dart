@@ -1,3 +1,4 @@
+import 'package:booklyapp/core/utils/styles.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -20,6 +21,20 @@ class BestSellerListViewItem extends StatelessWidget {
                     fit: BoxFit.fill,
                   )),
             ),
+          ),
+          const SizedBox(width: 30),
+          Column(
+            children: [
+              SizedBox(
+                width: MediaQuery.of(context).size.width * .5,
+                child: const Text(
+                  'Harry Potter land the Globet of fire',
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: Styles.textStyle20,
+                ),
+              )
+            ],
           ),
         ],
       ),
