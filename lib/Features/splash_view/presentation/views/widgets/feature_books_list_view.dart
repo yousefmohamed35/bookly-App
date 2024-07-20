@@ -1,4 +1,4 @@
-import 'package:booklyapp/Features/splash_view/presentation/views/widgets/custom_list_view_item.dart';
+import 'package:booklyapp/Features/splash_view/presentation/views/widgets/custom_book_image.dart';
 import 'package:flutter/cupertino.dart';
 
 class FeatureBooksListView extends StatelessWidget {
@@ -7,15 +7,15 @@ class FeatureBooksListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height*0.3,
+      height: MediaQuery.of(context).size.height * 0.3,
       child: ListView.builder(
-          scrollDirection : Axis.horizontal,
-        itemBuilder: (context,inex) {
-        return const Padding(
-          padding:  EdgeInsets.symmetric(horizontal: 8.0),
-          child:  CustomListViewItem(),
-        );
-      }),
+          scrollDirection: Axis.horizontal,
+          itemBuilder: (context, inex) {
+            return const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 8.0),
+              child: CustomBookImage(),
+            );
+          }),
     );
   }
 }
