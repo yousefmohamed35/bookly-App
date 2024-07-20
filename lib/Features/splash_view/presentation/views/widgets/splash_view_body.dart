@@ -1,4 +1,3 @@
-import 'package:booklyapp/Features/home/presentaion/views/home_view.dart';
 import 'package:booklyapp/core/utils/assets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
