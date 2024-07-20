@@ -45,9 +45,13 @@ class BestSellerListViewItem extends StatelessWidget {
                   const SizedBox(
                     height: 3,
                   ),
-                  const Text(
-                    'j.k. Rowling',
-                    style: Styles.textStyle14,
+                  Opacity(
+                    opacity: .5,
+                    child: Text(
+                      'j.k. Rowling',
+                      style: Styles.textStyle14
+                          .copyWith(fontWeight: FontWeight.normal),
+                    ),
                   ),
                   const SizedBox(
                     height: 3,
@@ -56,7 +60,7 @@ class BestSellerListViewItem extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        '19.99 \$',
+                        '19.99\$',
                         style: Styles.textStyle20,
                       ),
                       BookRating(),
