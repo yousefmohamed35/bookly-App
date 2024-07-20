@@ -1,3 +1,5 @@
+import 'package:booklyapp/Features/home/presentaion/views/widgets/book_raring.dart';
+import 'package:booklyapp/Features/home/presentaion/views/widgets/custom_book_deatails_app_bar.dart';
 import 'package:booklyapp/Features/splash_view/presentation/views/widgets/custom_book_image.dart';
 import 'package:booklyapp/core/utils/styles.dart';
 
@@ -38,33 +40,14 @@ class BookDetailsViewBody extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(
+            height: 18,
+          ),
+          const BookRating(
+            mainAxisAlignment: MainAxisAlignment.center,
+          )
         ],
       ),
-    );
-  }
-}
-
-class CustomBookDetailsAppBar extends StatelessWidget {
-  const CustomBookDetailsAppBar({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.close,
-          ),
-        ),
-        IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.shopping_cart_outlined,
-          ),
-        ),
-      ],
     );
   }
 }
