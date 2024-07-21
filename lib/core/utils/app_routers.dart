@@ -4,25 +4,25 @@ import 'package:booklyapp/Features/search/presentaion/views/search_view.dart';
 import 'package:booklyapp/Features/splash_view/presentation/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
 
-abstract class AppRouters{
- static final router = GoRouter(
-  routes: [
-    GoRoute(
-      path: '/',
-      builder: (context, state) => const SplashView(),
-    ),
-     GoRoute(
-      path: '/homeView',
-      builder: (context, state) => const HomeView(),
-    ),
-     GoRoute(
-      path: '/bookDetailsView',
-      builder: (context, state) => const BookDetailsView(),
-    ),
-     GoRoute(
-      path: '/searchView',
-      builder: (context, state) => const SearchView(),
-    ),
-  ],
-);
+abstract class AppRouters {
+  static final router = GoRouter(
+    routes: [
+      GoRoute(
+        path: '/',
+        builder: (context, state) => const SplashView(),
+      ),
+      GoRoute(
+        path: '/homeView',
+        builder: (context, state) => const HomeView(),
+      ),
+      GoRoute(
+        path: '/bookDetailsView',
+        builder: (context, state) => const BookDetailsView(),
+      ),
+      GoRoute(
+        path: '/searchView',
+        builder: (context, state) => const SearchView(),
+      ),
+    ],
+  );
 }
