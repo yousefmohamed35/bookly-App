@@ -17,14 +17,14 @@ class SearchResultListView extends StatelessWidget {
               itemCount: state.books.length,
               itemBuilder: (context, index) {
                 return Padding(
-                  padding: EdgeInsets.symmetric(vertical: 10),
+                  padding: const EdgeInsets.symmetric(vertical: 10),
                   child: BookListViewItem(
                     book: state.books[index],
                   ),
                 );
               });
         } else {
-          return CustomLoadingIndicator();
+          return const CustomLoadingIndicator();
         }
       },
     );
